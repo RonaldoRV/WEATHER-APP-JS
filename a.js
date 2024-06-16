@@ -15,7 +15,7 @@ form.addEventListener('submit', (event)=>{
     searchWeather();
   }
 })
-let id= '4449dd3b6988d2157bb4cb7bc06d374d'
+let id= '4449d' // Insert your api key here 
 let url = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" +id; 
 const searchWeather = () => {
   fetch(url + '&q=' + valueSearch.value)
